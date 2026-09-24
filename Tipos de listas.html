@@ -1,82 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tipos de listas en HTML</title>
-</head>
-<body>
-    <h1>Tipos de listas</h1>
-    <h2>Listas ordenadas</h2>
-    <p>Una lista ordenada es una serie de elementos los cuales 
-        tendran una numeracion de acuerdo al numeros de elementos.
-    </p>
-    <ol>
-        <li>Luna Arias </li>
-        <li>Franco Andrea</li>
-        <li>Granados Evelyn</li>
-    </ol>
-    <h2>Listas no ordenadas</h2>
-    <p>Las listas no ordenadas no utilizan ninguna numeracion delante 
-        de cada item sino un pequeño elemento grafico
-    </p>
-    <ul>
-        <li>C</li>
-        <li>C++</li>
-        <li>Python</li>
-    </ul>
-    <h2>Lista de definiciones</h2>
-    <p>Se utiliza para asociar un termino y la definicion del mismo</p>
-    <dl>
-        <!-- Primer termino-->
-        <dt>C++</dt>
-        <!-- Definicion del primer termino-->
-        <dd>
-            Es un lenguaje de programacion, diseñado a mediados de los años
-            1980 como extension del lenguaje de programacion C.
-        </dd>
-        <!-- Segundo termino-->
-        <dt>Java</dt>
-        <!-- Definicion del segundo termino-->
-        <dd>
-            Es un lenguaje de programacion orientado a objetos desarrollado
-            por Sun Microsystem a principios de los 90.
-        </dd>
-        <!-- Tercer termino-->
-        <dt>JavaScript</dt>
-        <!-- Definicion del tercer termino-->
-        <dd>
-            Es un lenguaje interpretado, es decir que no requiere compilacion,
-            utilizado principalmente en paginas web, con una sintaxis similar
-            al lenguaje de programacion C.
-        </dd>
-    </dl>
-    <h2>Listas anidadas</h2>
-    <p>En HTML nos permite insertar una lista dentro de otra lista, se pueden
-        anidar diferentes tipos de lista de acuerdo al requerimiento
-    </p>
-    <ol>
-        <li>Argentina
-            <ul>
-                <li>Buenos aires</li>
-                <li>La plata</li>
-                <li>Mendoza</li>
-            </ul>
-        </li>
-        <li>España
-            <ul>
-                <li>Barcelona</li>
-                <li>Madrid</li>
-                <li>Sevilla</li>
-            </ul>
-        </li>
-        <li>Mexico
-            <ul>
-                <li>Chihuahua</li>
-                <li>Cd. Juarez</li>
-                <li>Hermosillo</li>
-            </ul>
-        </li>
-    </ol>
-</body>
-</html>
+<!DOCTYPE html> <!-- Indica al navegador que el documento usa HTML5 -->
+<html lang="en"> <!-- Elemento raíz; define el idioma de la página  -->
+<head> <!-- Contenedor de metadatos no visibles en la página -->
+    <meta charset="UTF-8"> <!-- Permite tildes, ñ y caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adapta la pantalla a celulares -->
+    <title>Tipos de listas en HTML</title> <!-- Texto de la pestaña del navegador -->
+</head> <!-- Cierre de la sección de metadatos -->
+<body> <!-- Contenedor del contenido visible de la página -->
+
+    <h1>Tipos de listas</h1> <!-- Encabezado principal de la página -->
+
+    <h2>Listas ordenadas</h2> <!-- Subtítulo de nivel 2 -->
+    <p>Una lista ordenada es una serie de elementos los cuales tendran una numeracion de acuerdo al numeros de elementos.</p> <!-- Párrafo explicativo -->
+    
+    <ol> <!-- <ol>: Crea una lista ordenada (numerada) -->
+        <li>Luna Arias</li> <!-- <li>: Elemento o ítem individual de la lista -->
+        <li>Franco Andrea</li> <!-- Elemento de lista numerado -->
+        <li>Granados Evelyn</li> <!-- Elemento de lista numerado -->
+    </ol> <!-- Cierre de lista ordenada -->
+
+    <h2>Listas no ordenadas</h2> <!-- Subtítulo de nivel 2 -->
+    <p>Las listas no ordenadas no utilizan ninguna numeracion delante de cada item sino un pequeño elemento grafico</p> <!-- Párrafo explicativo -->
+    
+    <ul> <!-- <ul>: Crea una lista no ordenada (con viñetas o puntos) -->
+        <li>C</li> <!-- Elemento de lista con viñeta -->
+        <li>C++</li> <!-- Elemento de lista con viñeta -->
+        <li>Python</li> <!-- Elemento de lista con viñeta -->
+    </ul> <!-- Cierre de lista no ordenada -->
+
+    <h2>Lista de definiciones</h2> <!-- Subtítulo de nivel 2 -->
+    <p>Se utiliza para asociar un termino y la definicion del mismo</p> <!-- Párrafo explicativo -->
+    
+    <dl> <!-- <dl>: Crea una lista de descripción o definición -->
+        <dt>C++</dt> <!-- <dt>: Término que se va a definir -->
+        <dd>Es un lenguaje de programacion, diseñado a mediados de los años 1980 como extension del lenguaje de programacion C.</dd> <!-- <dd>: Descripción o definición del término -->
+
+        <dt>Java</dt> <!-- Término a definir -->
+        <dd>Es un lenguaje de programacion orientado a objetos desarrollado por Sun Microsystem a principios de los 90.</dd> <!-- Definición del término -->
+
+        <dt>JavaScript</dt> <!-- Término a definir -->
+        <dd>Es un lenguaje interpretado, es decir que no requiere compilacion, utilizado principalmente en paginas web, con una sintaxis similar al lenguaje de programacion C.</dd> <!-- Definición del término -->
+    </dl> <!-- Cierre de lista de definición -->
+
+    <h2>Listas anidadas</h2> <!-- Subtítulo de nivel 2 -->
+    <p>En HTML nos permite insertar una lista dentro de otra lista, se pueden anidar diferentes tipos de lista de acuerdo al requerimiento</p> <!-- Párrafo explicativo -->
+    
+    <ol> <!-- Lista principal ordenada -->
+        <li>Argentina <!-- Elemento padre -->
+            <ul> <!-- Lista secundaria (anidada) no ordenada -->
+                <li>Buenos aires</li> <!-- Elemento sublista -->
+                <li>La plata</li> <!-- Elemento sublista -->
+                <li>Mendoza</li> <!-- Elemento sublista -->
+            </ul> <!-- Cierre de lista anidada -->
+        </li> <!-- Cierre del elemento padre -->
+        <li>España <!-- Elemento padre -->
+            <ul> <!-- Lista secundaria no ordenada -->
+                <li>Barcelona</li> <!-- Elemento sublista -->
+                <li>Madrid</li> <!-- Elemento sublista -->
+                <li>Sevilla</li> <!-- Elemento sublista -->
+            </ul> <!-- Cierre de lista anidada -->
+        </li> <!-- Cierre del elemento padre -->
+        <li>Mexico <!-- Elemento padre -->
+            <ul> <!-- Lista secundaria no ordenada -->
+                <li>Chihuahua</li> <!-- Elemento sublista -->
+                <li>Cd. Juarez</li> <!-- Elemento sublista -->
+                <li>Hermosillo</li> <!-- Elemento sublista -->
+            </ul> <!-- Cierre de lista anidada -->
+        </li> <!-- Cierre del elemento padre -->
+    </ol> <!-- Cierre de lista principal ordenada -->
+
+</body> <!-- Cierre del contenido visible -->
+</html> <!-- Cierre del documento HTML -->
